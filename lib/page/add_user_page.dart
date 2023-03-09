@@ -90,6 +90,7 @@ class _AddUserPageState extends State<AddUserPage> {
                               labelText: 'Username',
                             ),
                           ),
+                          //name
                           FutureBuilder<List<CityModel>>(
                             builder: (context, snapshot) {
                               if (snapshot.hasData) {
@@ -120,6 +121,7 @@ class _AddUserPageState extends State<AddUserPage> {
                                 ? MyDatabase().getCityList()
                                 : null,
                           ),
+                          //dropdown
                           Container(
                             margin: EdgeInsets.only(top: 30),
                             child: TextButton(
