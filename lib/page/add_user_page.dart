@@ -53,12 +53,14 @@ class _AddUserPageState extends State<AddUserPage> {
           ),
           actions: [
             InkWell(
-                onTap: () {
-                  Navigator.of(context).pop();
-                },
-                child: Icon(
-                  Icons.arrow_back,
-                ))
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+              child: Icon(
+                Icons.arrow_back,
+              ),
+            )
+            //back page
           ],
         ),
         body: Form(
@@ -82,6 +84,7 @@ class _AddUserPageState extends State<AddUserPage> {
                               child: Icon(Icons.person_add),
                             ),
                           ),
+                          //person avtar
                           TextFormField(
                             controller: nameController,
                             decoration: InputDecoration(
@@ -159,6 +162,7 @@ class _AddUserPageState extends State<AddUserPage> {
                               ),
                             ),
                           ),
+                          //add or update button
                         ],
                       ),
                     ],
